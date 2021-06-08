@@ -20,7 +20,7 @@ One module in C, Three modules in X86 assembly, and One module in C++
 - Compile: `gcc -c -Wall -m64 -fno-pie -no-pie -o main.o main.c`
 ### control.asm (X86 assembly)
 - Purpose: Initialize the array, call the other X86 modules, and return the final sum from within this module.
-- Calls: [fill](https://github.com/clxmente/Assembly-CPSC-240/tree/main/%5B3%5D%20Sum%20of%20Array#fillasm-x86-assembly), [sum](https://github.com/clxmente/Assembly-CPSC-240/tree/main/%5B3%5D%20Sum%20of%20Array#sumasm-x86-assembly), **display**.
+- Calls: **fill**, **sum**, **display**.
 - Prototype: `double control();`
 - Returns: a float number representing the sum.
 - Assemble: `nasm -f elf64 -l control.lis -o control.o control.asm`
